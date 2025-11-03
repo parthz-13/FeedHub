@@ -8,7 +8,7 @@ import { generateToken, hashPassword, comparePassword, protect } from "./auth.js
 dotenv.config();
 const app = express();
 app.use(cors({
-  origin: 'feed-hub-nine.vercel.app', 
+  origin: 'https://feed-hub-nine.vercel.app', 
   credentials: true
 }));
 app.use(express.json());
