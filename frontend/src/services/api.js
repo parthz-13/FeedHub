@@ -9,7 +9,7 @@ const api = axios.create({
   },
 });
 
-// Add token to requests
+
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
   if (token) {
@@ -18,16 +18,16 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-// Auth
+
 export const register = (data) => api.post('/register', data);
 export const login = (data) => api.post('/login', data);
 
-// Feedback
+
 export const getFeedbacks = () => api.get('/feedback');
 export const createFeedback = (data) => api.post('/feedback', data);
 export const upvoteFeedback = (id) => api.post(`/feedback/${id}/upvote`);
 
-// Comments
+
 export const getComments = (feedbackId) => api.get(`/comments/${feedbackId}`);
 export const createComment = (feedbackId, data) => api.post(`/comments/${feedbackId}`, data);
 

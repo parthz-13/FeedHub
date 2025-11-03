@@ -16,7 +16,7 @@ body {
   padding: 20px;
 }
 
-/* Navbar */
+
 .navbar {
   background: white;
   padding: 1rem 2rem;
@@ -52,7 +52,7 @@ body {
   cursor: pointer;
 }
 
-/* Home */
+
 .home .header {
   display: flex;
   justify-content: space-between;
@@ -70,7 +70,7 @@ body {
   font-size: 1rem;
 }
 
-/* Feedback Form */
+
 .feedback-form {
   background: white;
   padding: 2rem;
@@ -105,7 +105,7 @@ body {
   font-size: 1rem;
 }
 
-/* Feedback Card */
+
 .feedback-list {
   display: flex;
   flex-direction: column;
