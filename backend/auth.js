@@ -1,4 +1,4 @@
-// auth.js
+
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import prisma from "./db.config.js";
