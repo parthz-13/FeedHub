@@ -18,17 +18,12 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-
-export const register = (data) => api.post('/register', data);
-export const login = (data) => api.post('/login', data);
-
-
-export const getFeedbacks = () => api.get('/feedback');
-export const createFeedback = (data) => api.post('/feedback', data);
-export const upvoteFeedback = (id) => api.post(`/feedback/${id}/upvote`);
-
-
-export const getComments = (feedbackId) => api.get(`/comments/${feedbackId}`);
-export const createComment = (feedbackId, data) => api.post(`/comments/${feedbackId}`, data);
+export const register = (data) => api.post('/api/register', data);
+export const login = (data) => api.post('/api/login', data);
+export const getFeedbacks = () => api.get('/api/feedback');
+export const createFeedback = (data) => api.post('/api/feedback', data);
+export const upvoteFeedback = (id) => api.post(`/api/feedback/${id}/upvote`);
+export const getComments = (feedbackId) => api.get(`/api/comments/${feedbackId}`);
+export const createComment = (feedbackId, data) => api.post(`/api/comments/${feedbackId}`, data);
 
 export default api;
