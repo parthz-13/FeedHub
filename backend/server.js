@@ -23,6 +23,9 @@ app.get("/", (req, res) => {
   res.send("Feedback Board API Running");
 });
 
+app.head('/health', (req, res) => res.sendStatus(200));
+app.get('/health', (req, res) => res.json({ status: 'ok' }));
+
 app.post("/api/register", async (req, res) => {
   const { name, email, password } = req.body;
   try {
